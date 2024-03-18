@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="App" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-03-18T17:21:16" hostname="MARIA-JIMENEZ" time="84.558">
+  <properties/>
+  <testcase name="Escoger la fecha y hora de nacimiento" classname="App" time="84.558"/>
+  <system-out><![CDATA[|-- Dado el usuario Mafe ingresa a la opcion DatePickerscreen
+|---- Mafe clicks on Card date picker
+|-- Cuando el usuario selecciona la fecha 26 nov 2017
+|---- Mafe clicks on Select the date - Open the calendar
+|---- Mafe clicks on Displays the list of years
+|---- Realiza scroll corto hacia arriba
+|---- Mafe clicks on Select the 2017 year
+|---- Mafe clicks on 15, Wednesday, March 15, 2017
+|---- Mafe clicks on OK to close the calendar
+|-- Y el usuario selecciona las 12pm
+hora
+Select the hour
+|---- Mafe clicks on Select the hour
+|---- Mafe clicks on Select the KEYBOARD
+|---- Mafe clicks on Displays the HOUR
+|---- Mafe enters '12' into Displays the HOUR
+|---- Mafe clicks on Displays the minutes
+|---- Mafe enters '00' into Displays the minutes
+|---- Mafe clicks on AM
+|---- Mafe clicks on OK
+|-- Y el usuario escoge un rango entre marzo 26 al 28 y guarda
+rango
+|---- Mafe clicks on Book the first day
+|---- Mafe clicks on Book the last day
+|---- Mafe clicks on Save the information
+|-- Entonces el usuario ve la pantalla de material desing
+Valida mensaje de la pÃ¡gina prioncipal
+|---- Then La p&Atilde;&iexcl;gina principal de la app should be 'Show Case Material 2 vs 3 '
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
