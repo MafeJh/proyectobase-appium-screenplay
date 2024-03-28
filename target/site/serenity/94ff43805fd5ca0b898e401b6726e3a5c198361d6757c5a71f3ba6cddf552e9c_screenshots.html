@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">SerenityBDD 3.6.21 Appium 2.0</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b430b674e11320dce0d53b7e7a21a5b9d49a45a479db931c9923bd4ea238e039.html">App</a></span>
+                > <span class="truncate-60"><a
+                    href="94ff43805fd5ca0b898e401b6726e3a5c198361d6757c5a71f3ba6cddf552e9c.html">Llenar los campos de texto de la segunda parte y validar </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 28-03-2024 11:14</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">App </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Como un usuario de de Material Flutter App, quiero interactuar con las diferentes funcionalidades de la App
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="f55cf301e8f51d63aebeb8bc8dbe880df940586e2a502c7a3e24c2b639523f8f.html">Windows
+                                </a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="1a23cb7cd7aea667ce70203224bb4ceefa295fd56b77cd3359187a7b00c05417.html">Text Field Widget Full Second Part
+                                </a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Llenar los campos de texto de la segunda parte y validar
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e554697be69068398aa4fd536bcb95f668fe29f1e0790c1e0300cfd68d57c84c.png" title=" Dado el usuario Mafe ingresa a la opcion TextFieldWidget" width="1080"/>
+                <img src="e554697be69068398aa4fd536bcb95f668fe29f1e0790c1e0300cfd68d57c84c.png" title=" Ingresa a la app material y luego a la secci&Atilde;&sup3;n especificada" width="1080"/>
+                <img src="e554697be69068398aa4fd536bcb95f668fe29f1e0790c1e0300cfd68d57c84c.png" title=" Mafe clicks on The card for get into the Inputs Screen page" width="1080"/>
+                <img src="c84a877a7b311665a24921b6b0a3f2f8654cf71a36f92c071ee38ec372e2855b.png" title=" Ingresa a la app material y luego a la secci&Atilde;&sup3;n especificada (completed)" width="1080"/>
+                <img src="204b193b5b22aac729b954c0c86e1838d9d63ec239c93d9f12825deef8dce4c3.png" title=" Dado el usuario Mafe ingresa a la opcion TextFieldWidget (completed)" width="1080"/>
+                <img src="cea1fd81f3d22bf300c25cfc219f62bc10ea61c54d754aa7c405b0981b2ac380.png" title=" Cuando el usuario llena todos los campos con nombre &quot;Fernanda&quot; celular &quot;3197079603&quot; y contrasena &quot;Mafe98&quot;" width="1080"/>
+                <img src="cea1fd81f3d22bf300c25cfc219f62bc10ea61c54d754aa7c405b0981b2ac380.png" title=" Ingresa Nombre, celular y contrase&Atilde;&plusmn;a correctos" width="1080"/>
+                <img src="cea1fd81f3d22bf300c25cfc219f62bc10ea61c54d754aa7c405b0981b2ac380.png" title=" Ingresa nombre y celular incompleto" width="1080"/>
+                <img src="cea1fd81f3d22bf300c25cfc219f62bc10ea61c54d754aa7c405b0981b2ac380.png" title=" Mafe clicks on Names for first part of the form" width="1080"/>
+                <img src="499d5cd1411651a73f4c597bc5609b027b70e9a339820fadcb06914bab5dcf2a.png" title=" Mafe enters 'Mafe' into Nombre for first part of the form" width="1080"/>
+                <img src="e09ef3309a4d387d4d0f6339fe263e456dadc54df6216b8b24ea625ccaf03dbb.png" title=" Mafe clicks on Click por fuera" width="1080"/>
+                <img src="8d508f61e98a698bc58eae668feefdd88b3eec03a1aebd893eecaf9f93495862.png" title=" Mafe clicks on Cel for first part of the form" width="1080"/>
+                <img src="70b992d5a9dc9faff069559d087e73c57de707c3e202f1020d40b638448944c1.png" title=" Mafe enters '3197079603' into Cel for first part of the form" width="1080"/>
+                <img src="ad78e388f56e08a44c6e0ab303e9b8383c386f8ed7024e44c1ec23b640efc5fc.png" title=" Ingresa nombre y celular incompleto (completed)" width="1080"/>
+                <img src="bcf22486aa80196d1f806b227978a65def576f442b152b5b61b6114e5fe36ec9.png" title=" Ingresa constrase&Atilde;&plusmn;a" width="1080"/>
+                <img src="bcf22486aa80196d1f806b227978a65def576f442b152b5b61b6114e5fe36ec9.png" title=" Realiza scroll largo" width="1080"/>
+                <img src="aa17ae6cad700ff2a20ca32de08481ac17b60abbe83de88eb42d4749e52eaddc.png" title=" Mafe clicks on Click por fuera" width="1080"/>
+                <img src="1a64d799f86ab4dd3fc5bd0f41b03ebd3b39a1ffc7371a4bb3f14fa14e2342e9.png" title=" Mafe clicks on Contrase&Atilde;&plusmn;a for first part of the form" width="1080"/>
+                <img src="3de87d623aed6b14e78bfdcf965958935b6e3c4f939de9772c8832f89fb85a23.png" title=" Mafe enters '123' into Contrase&Atilde;&plusmn;a for first part of the form" width="1080"/>
+                <img src="d3af906cfaa529fe43bbdb3cb6b858838171dd9daeda80b27b9bdcabc318f417.png" title=" Mafe clicks on Contrase&Atilde;&plusmn;a for second part of the form" width="1080"/>
+                <img src="414ad52cace177dc3b57e3a06eb4ef455b8840830c13f78e98a92c9c77850188.png" title=" Ingresa constrase&Atilde;&plusmn;a (completed)" width="1080"/>
+                <img src="a57bbfc26d28b7c4107abfb402ed066b1dde1357d37b05b28a3077e14adf3346.png" title=" Ingresa Nombre, celular y contrase&Atilde;&plusmn;a correctos (completed)" width="1080"/>
+                <img src="f9e82e0a46191962d66aecce2b600e44b510da5afba7e0377dde2f6bd77fcedc.png" title=" Cuando el usuario llena todos los campos con nombre &quot;Fernanda&quot; celular &quot;3197079603&quot; y contrasena &quot;Mafe98&quot; (completed)" width="1080"/>
+                <img src="a57bbfc26d28b7c4107abfb402ed066b1dde1357d37b05b28a3077e14adf3346.png" title=" Entonces el usuario valida la informacion y es correcta con la alerta &quot;Form is valid&quot;" width="1080"/>
+                <img src="a57bbfc26d28b7c4107abfb402ed066b1dde1357d37b05b28a3077e14adf3346.png" title=" Ingresa a la app material y luego a la secci&Atilde;&sup3;n especificada" width="1080"/>
+                <img src="a57bbfc26d28b7c4107abfb402ed066b1dde1357d37b05b28a3077e14adf3346.png" title=" Mafe clicks on Contrase&Atilde;&plusmn;a for second part of the form" width="1080"/>
+                <img src="70b3a2654f89e9d864e355af92273e441701f0dd3322fa7d8a65701e392e1cdc.png" title=" Ingresa a la app material y luego a la secci&Atilde;&sup3;n especificada (completed)" width="1080"/>
+                <img src="ada1b4d20946e133b875d20830ec9658a3b416ba3d694b0ca8d2b47a9c26fea8.png" title=" Then Form is valid should be 'Form is valid'" width="1080"/>
+                <img src="2ab8c78776b66add05febb5f92cd2f0a01f58c9864e77f73a7d1acb971a64736.png" title=" Entonces el usuario valida la informacion y es correcta con la alerta &quot;Form is valid&quot; (completed): <span class='success-color'>SUCCESS</span>" width="1080"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.7.0</span>
+</div>
+</body>
+</html>

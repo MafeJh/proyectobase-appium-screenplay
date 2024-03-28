@@ -17,7 +17,7 @@ public class ScrollFlutterUp implements Interaction {
         Dimension dimension = ThucydidesWebDriverSupport.getProxiedDriver().manage().window().getSize();
         int startX = dimension.width / 2;
         int startY = (int) (dimension.height * 0.5);
-        int endY = (int) (dimension.height * 0.6);
+        int endY = (int) (dimension.height * 0.95);
 
         action.longPress(PointOption.point(startX, startY))
                 .moveTo(PointOption.point(startX, endY))

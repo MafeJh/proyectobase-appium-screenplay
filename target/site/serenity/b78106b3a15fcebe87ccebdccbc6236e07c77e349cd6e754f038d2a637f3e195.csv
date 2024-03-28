@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"App","Escoger la fecha y hora de nacimiento","SUCCESS","2024-03-18T12:21:16.79738-05:00[America/Bogota]","0.0","83.71"
+"App","Escoger la fecha y hora de nacimiento","SUCCESS","2024-03-20T18:38:37.2713819-05:00[America/Bogota]","0.0","87.87"
+"App","Llenar los campos de la primera parte de formulario y validar","SUCCESS","2024-03-26T20:05:40.6884368-05:00[America/Bogota]","0.0","61.45"
+"App","Llena el numero de celular mal","SUCCESS","2024-03-28T10:59:19.1109763-05:00[America/Bogota]","0.0","63.9"
+"App","Llenar los campos de texto de la segunda parte y validar","SUCCESS","2024-03-28T11:14:46.0201244-05:00[America/Bogota]","0.0","62.54"
+"App","El usuario deja el campo Nombre vacio","SUCCESS","2024-03-28T11:58:50.8815069-05:00[America/Bogota]","0.0","64.74"
